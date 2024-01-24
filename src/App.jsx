@@ -1,13 +1,11 @@
-import { useState } from "react";
+import Header from "./components/Header";
+import Meals from "./components/Meals";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  console.log("asd", asd);
-
   return (
     <>
-      <div>Starting...</div>
+      <Header />
+      <Meals />
     </>
   );
 }
