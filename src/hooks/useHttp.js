@@ -28,7 +28,6 @@ export default function useHttp(url, config, initialData) {
       setIsLoading(true);
       try {
         const resData = await sendHttpRequest(url, { ...config, body: data });
-        console.log("sendData");
         setData(resData);
         setError(undefined);
       } catch (error) {
