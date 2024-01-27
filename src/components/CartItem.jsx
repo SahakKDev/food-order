@@ -1,4 +1,4 @@
-import { currencyFormatter } from "../util/formatting";
+import { currencyFormatter } from "../util/helpers";
 
 export default function CartItem({
   name,
@@ -10,7 +10,7 @@ export default function CartItem({
   return (
     <li className="cart-item">
       <p>
-        {name} - {currencyFormatter.format(quantity * price)}
+        {name} - {quantity} x {currencyFormatter.format(price)}
       </p>
 
       <p className="cart-item-actions">

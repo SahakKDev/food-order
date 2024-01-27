@@ -3,8 +3,8 @@ import { useContext } from "react";
 import Button from "./UI/Button";
 import { CartContext } from "../store/CartContext";
 
-import { currencyFormatter } from "../util/formatting";
-import { BASE_URL } from "../constants";
+import { currencyFormatter } from "../util/helpers";
+import { BASE_URL } from "../util/constants";
 
 export default function MealItem({ meal }) {
   const { addItem } = useContext(CartContext);
